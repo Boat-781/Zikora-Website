@@ -80,6 +80,16 @@ section {
     border-radius: 5px;
 }
 
+/* Additional styling for specific image */
+.Zikora-Approval img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px; /* Set the maximum height as per your preference */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 /* h1 style */
 h1 {
