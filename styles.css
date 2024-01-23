@@ -84,7 +84,7 @@ section {
 .Zikora-Approval img {
     max-width: 100%;
     height: auto;
-    max-height: 200px; /* Set the maximum height as per your preference */
+    max-height: 100px; /* Set the maximum height as per your preference */
     margin-top: 15px;
     margin-bottom: 15px;
     border-radius: 8px;
