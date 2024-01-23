@@ -32,6 +32,7 @@
             
             <!-- Add your blog content here -->
             <article>
+              <div class="tab" id="post1">
                 <h3>A Brighter Future: How Personalized Tutoring Shaped Akossiwa Akakpo's STEM Experience</h3>
                 <p>Date: January 16, 2024</p>
                 <p>Author: Victoria</p>
@@ -49,12 +50,13 @@
 
 Akakpo's achievements in school went beyond better grades. She gained critical thinking and problem-solving skills, as well as a passion for investigating the seemingly endless possibilities in STEM fields. In addition to addressing her difficulties, the customized tutoring program gave her the confidence to see an opportunity-filled future.</ul>
                 <ul> Akakpo's story serves as evidence of the effectiveness of personalized support in overcoming particular obstacles in STEM education. By recognizing and addressing each student's individual challenges, Zikora STEM Society makes sure that obstacles are removed and successful paths are created. As we celebrate her victories, we are reminded that people like Akakpo can overcome obstacles in their educational journeys with the help of mentorship, targeted interventions, and community support.</ul>  
-                
+            </div>
             </article>
 
          
 
              <article>
+              <div class="tab" id="post2">
                 <h3>The Importance of STEM Education in Underprivileged Areas</h3>
                 <p>Date: February 4, 2023</p>
                 <p>Author: James Owusu</p>
@@ -66,9 +68,11 @@ Akakpo's achievements in school went beyond better grades. She gained critical t
 
 Zikora STEM Society is steadfast in its commitment to democratizing access to high-quality STEM education even as it looks to the future. There are plans to reach even more underprivileged communities, create new partnerships, and expand current programs. The group is calling on people, companies, and the community at large to support its mission of ensuring that STEM education is a basic human right for all bright minds.</ul>
                  <ul> Zikora STEM Society is a ray of hope, demonstrating that everyone can have their mind empowered and a better, more inclusive future created through commitment, ingenuity, and a love of learning. The organization is ensuring that STEM education has no boundaries by closing the educational gap and planting the seeds for the next generation of leaders and innovators.</ul>
+              </div>
             </article>
 
              <article>
+            <div class="tab" id="post3">
                 <h3>Zikora STEM Society Officially Incorporated Under Companies Act 2019 (Act 992)</h3>
                 <p>Date: August 4, 2022</p>
                 <p>Author: Persis</p>
@@ -95,10 +99,17 @@ As we embark on this new chapter, we invite you to continue supporting Zikora ST
 Stay tuned for more updates on our initiatives, partnerships, and the impactful stories of the students we serve.
 
 Thank you for being part of the Zikora STEM Society family!</ul>
-    
+            </div>
             </article>
 
-
+       <!-- Add buttons to toggle between tabs -->
+            <div class="tab-buttons">
+                <div class="tab-button" onclick="showTab('post1')">Post 1</div>
+                <div class="tab-button" onclick="showTab('post2')">Post 2</div>
+                <div class="tab-button" onclick="showTab('post3')">Post 3</div>
+                <!-- Add more buttons as needed -->
+            </div>
+            
         </section>
     </main>
 
@@ -117,6 +128,20 @@ Thank you for being part of the Zikora STEM Society family!</ul>
     </div>
 </footer>
 
+ <script>
+        // JavaScript function to toggle between tabs
+        function showTab(tabId) {
+            // Hide all tabs
+            var tabs = document.querySelectorAll('.tab');
+            tabs.forEach(function(tab) {
+                tab.classList.remove('active');
+            });
+
+            // Show the selected tab
+            var selectedTab = document.getElementById(tabId);
+            selectedTab.classList.add('active');
+        }
+    </script>   
 </body>
 
 </html>
