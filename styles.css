@@ -11,6 +11,9 @@ ul {
 
 /* Basic styling */
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #d1bcbc;
@@ -220,19 +223,11 @@ button:hover {
 /* Footer styling */
 /* Style for the sponsorship section in the footer */
 footer {
+    margin-top: auto;
     text-align: center;
     padding: 10px;
     background-color: #260775;
     color: #fff;
 }
 
-.sponsorship {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.sponsor-logo img {
-    width: 120px; /* Adjust size as needed */
-    height: auto;
-}
